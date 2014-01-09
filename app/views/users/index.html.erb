@@ -1,0 +1,13 @@
+<h1>Form to submit User Data - <%= @status %></h1>
+
+<%= form_tag(controller: "users", action: "index", method: "post") do%>
+<%= label_tag(:name, "Name:") %>
+<%= text_field_tag(:name) %></br>
+<%= label_tag(:email, "Email:") %>
+<%= text_field_tag(:email) %></br>
+<%= label_tag(:phone, "Phone:") %>
+<%= text_field_tag(:phone) %></br>
+<%= submit_tag("Submit") %>
+
+<% end %>
+
